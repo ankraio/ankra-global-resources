@@ -1,0 +1,5 @@
+apiVersion: v1
+kind: HTTPRegistry
+spec:
+  name: sonarqube
+  url: https://SonarSource.github.io/helm-chart-sonarqube
