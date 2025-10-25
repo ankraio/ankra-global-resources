@@ -3,3 +3,6 @@ kind: HTTPRegistry
 spec:
   name: arr-stack
   url: https://bubylou.github.io/Arr-Stack
+  exclude_charts:
+    - ha-apps
+    - media-apps
