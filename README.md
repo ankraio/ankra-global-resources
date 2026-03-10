@@ -1,9 +1,6 @@
 # Ankra's Global Resource Repository
 This repository contains global resources that appear in the Ankra platform, such as helm registries.
 
-## TODO:
-* [] Content map
-* [] Contribution guidelines
 
 
 ---
