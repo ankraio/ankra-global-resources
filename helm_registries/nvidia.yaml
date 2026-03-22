@@ -1,5 +1,0 @@
-apiVersion: v1
-kind: HTTPRegistry
-spec:
-  name: nvidia
-  url: https://helm.ngc.nvidia.com/nvidia
