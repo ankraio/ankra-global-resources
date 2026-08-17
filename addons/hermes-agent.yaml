@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Addon
+spec:
+  name: hermes-agent
+  display_name: Hermes Agent
+  description: >-
+    Nous Research's Hermes Agent - an LLM agent gateway with tool use, a
+    browser and an optional OpenAI-compatible API server. The Ankra chart pins
+    the image by digest, requires credentials to come from a managed Secret,
+    and ships a NetworkPolicy that keeps the agent off the cluster network and
+    the cloud metadata endpoint.
+  website_url: https://github.com/NousResearch/hermes-agent
+  documentation_url: https://github.com/ankraio/ankra-charts/tree/main/hermes-agent
+  icon_url: https://raw.githubusercontent.com/NousResearch/hermes-agent/main/website/static/img/apple-touch-icon.png
+  category: AI Agents
+  match_chart_names:
+    - hermes-agent
+  match_keywords:
+    - hermes
+  match_home_url_prefixes:
+    - https://github.com/ankraio/ankra-charts/tree/main/hermes-agent
+    - https://github.com/NousResearch/hermes-agent
