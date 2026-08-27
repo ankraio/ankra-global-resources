@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Addon
+spec:
+  name: langfuse
+  display_name: Langfuse
+  description: >-
+    Open source LLM engineering platform - tracing and observability for LLM
+    applications, plus evaluations, prompt management, and cost and latency
+    metrics. The chart self-hosts the full stack on Kubernetes, bringing its
+    own PostgreSQL, Valkey and S3-compatible object storage.
+  website_url: https://langfuse.com
+  documentation_url: https://langfuse.com/docs
+  icon_url: https://langfuse.com/langfuse_logo.png
+  category: Observability
+  match_chart_names:
+    - langfuse
+  match_keywords:
+    - langfuse
+  match_home_url_prefixes:
+    - https://langfuse.com
