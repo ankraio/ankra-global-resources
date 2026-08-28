@@ -3,3 +3,13 @@ kind: HTTPRegistry
 spec:
   name: jfrog
   url: https://charts.jfrog.io
+  # Bitnami-lineage subcharts republished in jfrog's index whose every pinned
+  # image is 404 on Docker Hub (verified per-tag 2026-08-23, ankra-fxrry).
+  # Working alternatives are catalogued: cloudnative-pg / percona for
+  # Postgres, ot-container-kit for Redis.
+  exclude_charts:
+    - postgresql
+    - redis
+    - nginx
+    - rabbitmq
+    - valkey
