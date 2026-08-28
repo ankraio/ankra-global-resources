@@ -3,3 +3,8 @@ kind: HTTPRegistry
 spec:
   name: goauthentik
   url: https://charts.goauthentik.io
+  # Bitnami-lineage subcharts republished in authentik's index whose pinned
+  # images are 404 on Docker Hub (verified 2026-08-23, ankra-fxrry).
+  exclude_charts:
+    - postgresql
+    - redis

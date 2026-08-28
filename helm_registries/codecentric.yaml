@@ -3,3 +3,8 @@ kind: HTTPRegistry
 spec:
   name: codecentric
   url: https://codecentric.github.io/helm-charts
+  # The retired keycloak chart bundles a Bitnami postgresql subchart whose
+  # images are 404 on Docker Hub (verified 2026-08-23, ankra-fxrry).
+  # keycloakx, the maintained successor, stays.
+  exclude_charts:
+    - keycloak
