@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: HTTPRegistry
+spec:
+  name: gigapipe
+  url: https://metrico.github.io/gigapipe-helm
+  # qryn-helm is the retired chart for qryn 3.x (the Node.js generation,
+  # app 3.2.39) published from the same index; gigapipe is its successor.
+  exclude_charts:
+    - qryn-helm
